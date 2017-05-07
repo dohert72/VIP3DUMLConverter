@@ -1,8 +1,8 @@
 from __future__ import division
 import os, sys, re
 
-from solid.solidpython import union
-
+from solid import *
+from solid.utils import *
 
 def assembly (new_lines, new_cards):
     '''
@@ -16,4 +16,4 @@ def assembly (new_lines, new_cards):
     final_diagram =(union()(new_lines, new_cards, forward(10)(right(100)(down(3)((cube([500,300,1], False)))))))
     return final_diagram
 
-#, right(150)(cube([500,300,1], False))
+ #right(150)(cube([500,300,1], False))

@@ -1,5 +1,5 @@
 
-from solid import *
+from solid.solidpython import *
 from solid.utils import *
 from cmath import *
 from openSCADShapes import *
@@ -11,7 +11,7 @@ class Builder:
     @staticmethod
     def build_shape(shape_type, attrs, width_norm, height_norm):
         if shape_type == 'Class':
-           shape = ClassCard3D(attrs['Id'], float(attrs['X']), float(attrs['Y']),
+            shape = ClassCard3D(attrs['Id'], float(attrs['X']), float(attrs['Y']),
                   float(attrs['Width']), float(attrs['Height']),
                   width_norm, height_norm, attrs['Name'])
 
