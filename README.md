@@ -25,7 +25,11 @@ VIP3DUMLConverter:
 
 -XMLParser.py:
     Functions for parsing XML structure of VP output for UML designs
-
+-ConvertToSTL.bat
+    Batch file for windows command line.  Executes both the conversion to .scad and then to .stl.
+    Takes two arguments: The loction of the xml and the location you would like to place the final 
+    stl file.
+    
 Installation, Configuration, and Running Program:
 =================================================
 Installation:
